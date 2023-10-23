@@ -755,7 +755,7 @@ def running(arrival_rate_values):
     print(f"CPU utilization:                                {cpuUtilizationTime}%")
     print(f"Average number of processes in the ready queue: {average_queue_size}")
 
-    data_to_add = "RoundRobin 0.2",[arrival_rate_values, avgTurnTime, totalThroughput,cpuUtilizationTime,average_queue_size]
+    data_to_add = ["RoundRobin 0.2",arrival_rate_values, avgTurnTime, totalThroughput,cpuUtilizationTime,average_queue_size]
     add_row_to_csv("runData.csv", data_to_add)
 
 
@@ -766,6 +766,7 @@ if __name__ == "__main__":
 
     # Define simulation parameters
     total_processes = 10000
+
     average_service_time = 0.06  
     arrival_rate_values = 30  # Vary λ to simulate different loads
 
