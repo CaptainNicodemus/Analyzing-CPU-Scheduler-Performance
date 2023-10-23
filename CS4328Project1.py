@@ -628,7 +628,7 @@ def running(arrival_rate_values):
     print(f"CPU utilization:                                {cpuUtilizationTime}%")
     print(f"Average number of processes in the ready queue: {average_queue_size}")
     
-    data_to_add = [arrival_rate_values, avgTurnTime, totalThroughput,cpuUtilizationTime,average_queue_size]
+    data_to_add = ["fcfs",arrival_rate_values, avgTurnTime, totalThroughput,cpuUtilizationTime,average_queue_size]
     add_row_to_csv("runData.csv", data_to_add)
 
     
@@ -659,7 +659,7 @@ def running(arrival_rate_values):
     print(f"CPU utilization:                                {cpuUtilizationTime}%")
     print(f"Average number of processes in the ready queue: {average_queue_size}")
 
-    data_to_add = [arrival_rate_values, avgTurnTime, totalThroughput,cpuUtilizationTime,average_queue_size]
+    data_to_add = ["SRTF",arrival_rate_values, avgTurnTime, totalThroughput,cpuUtilizationTime,average_queue_size]
     add_row_to_csv("runData.csv", data_to_add)
 
 
@@ -690,7 +690,7 @@ def running(arrival_rate_values):
     print(f"CPU utilization:                                {cpuUtilizationTime}%")
     print(f"Average number of processes in the ready queue: {average_queue_size}")
     
-    data_to_add = [arrival_rate_values, avgTurnTime, totalThroughput,cpuUtilizationTime,average_queue_size]
+    data_to_add = ["hrrn_scheduling",arrival_rate_values, avgTurnTime, totalThroughput,cpuUtilizationTime,average_queue_size]
     add_row_to_csv("runData.csv", data_to_add)
 
 
@@ -721,7 +721,7 @@ def running(arrival_rate_values):
     print(f"CPU utilization:                                {cpuUtilizationTime}%")
     print(f"Average number of processes in the ready queue: {average_queue_size}")
 
-    data_to_add = [arrival_rate_values, avgTurnTime, totalThroughput,cpuUtilizationTime,average_queue_size]
+    data_to_add = ["RoundRobin 0.01",arrival_rate_values, avgTurnTime, totalThroughput,cpuUtilizationTime,average_queue_size]
     add_row_to_csv("runData.csv", data_to_add)
 
 
@@ -755,7 +755,7 @@ def running(arrival_rate_values):
     print(f"CPU utilization:                                {cpuUtilizationTime}%")
     print(f"Average number of processes in the ready queue: {average_queue_size}")
 
-    data_to_add = [arrival_rate_values, avgTurnTime, totalThroughput,cpuUtilizationTime,average_queue_size]
+    data_to_add = "RoundRobin 0.2",[arrival_rate_values, avgTurnTime, totalThroughput,cpuUtilizationTime,average_queue_size]
     add_row_to_csv("runData.csv", data_to_add)
 
 
