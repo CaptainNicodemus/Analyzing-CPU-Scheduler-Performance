@@ -765,7 +765,7 @@ if __name__ == "__main__":
 
 
     # Define simulation parameters
-    total_processes = 10
+    total_processes = 10000
     average_service_time = 0.06  
     arrival_rate_values = 30  # Vary λ to simulate different loads
 
